@@ -16,7 +16,7 @@
 title: Eric's Homepage
 email: jyangbv@connect.ust.hk
 description: >- # this means to ignore newlines until "baseurl:"
-  Eric is a senior undergrad in HKUST. He majors in computer science and electronic engineering.
+A personal blog storage of Eric Yang.
 twitter_username: iTbHR1oaS5bdEJJ
 github_username: EricY019
 minimal_mistakes_skin: dirt
@@ -56,34 +56,28 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : Jingwen YANG
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Eric is a senior undergrad of HKUST. He majors in computer science and electronic engineering. This is his blog site."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://ericy019.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/EricY019"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://www.instagram.com/ericy19/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/EricY019"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://www.instagram.com/ericy19/"
 
 defaults:
   # _posts
