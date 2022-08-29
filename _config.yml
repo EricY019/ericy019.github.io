@@ -13,15 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+minimal_mistakes_skin: dirt
 title: Eric's Homepage
-subtitle: Personal blog storage
-name: Eric Yang
+subtitle: Blog storage
+locale: en-US
+  name: Eric YANG
 email: jyangbv@connect.ust.hk
 description: >- # this means to ignore newlines until "baseurl:"
   A personal blog storage of Eric Yang.
-twitter_username: iTbHR1oaS5bdEJJ
 github_username: EricY019
-minimal_mistakes_skin: dirt
+repostiory: EricY019/ericy019.github.io
 search: true
 hear_scripts: 
   - http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.0.js
@@ -63,7 +64,7 @@ plugins:
 
 author:
   name   : Jingwen YANG
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/bio-photo.png"
   bio    : "Eric is a senior undergrad of HKUST. He majors in computer science and electronic engineering. This is his blog site."
   links:
     - label: "Website"
