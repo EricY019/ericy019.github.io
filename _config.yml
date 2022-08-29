@@ -14,6 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Eric's Homepage
+subtitle: Personal blog storage
+name: Eric Yang
 email: jyangbv@connect.ust.hk
 description: >- # this means to ignore newlines until "baseurl:"
   A personal blog storage of Eric Yang.
@@ -21,6 +23,10 @@ twitter_username: iTbHR1oaS5bdEJJ
 github_username: EricY019
 minimal_mistakes_skin: dirt
 search: true
+hear_scripts: 
+  - http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.0.js
+  - https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js
+  - https://unpkg.com/mathjs@7.0.1/dist/math.min.js
 
 # Build settings
 markdown: kramdown
