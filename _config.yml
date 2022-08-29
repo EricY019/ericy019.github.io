@@ -17,7 +17,7 @@ minimal_mistakes_skin: dirt
 title: Eric's Homepage
 subtitle: Blog storage
 locale: en-US
-  name: Eric YANG
+name: Eric YANG
 email: jyangbv@connect.ust.hk
 description: >- # this means to ignore newlines until "baseurl:"
   A personal blog storage of Eric Yang.
