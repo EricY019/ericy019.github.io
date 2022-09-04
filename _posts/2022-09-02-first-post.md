@@ -7,3 +7,5 @@ tags:
 ---
 
 This is a testing page.
+
+![lena](/assets/images/lena.png)
