@@ -30,7 +30,7 @@ If not, open Git Bash and enter the following:
 $ ssh -keygen -t rsa -C "yourexample@example.com"
 ```
 
-Keep pressing `Enter` until the key's randomart image is shown. You will find `id_rsa` and `id_rsa.pub` in file path `C:\Users\$your_user_name\.ssh`， where `id_rsa` is the private key and `id_rsa.pub` the public key.
+Keep pressing `Enter` until the key's randomart image is shown. You will find `id_rsa` and `id_rsa.pub` in file path `C:\Users\$your_user_name\.ssh`, where `id_rsa` is the private key and `id_rsa.pub` the public key.
 
 ### Associate SSH Key to Github
 
@@ -38,7 +38,7 @@ Go to GitHub settings. Find SSH and GPG keys in Access. Click on New SSH key on 
 
 ![ssh-key](/assets/images/ssh-key.png)
 
-In ths page, copy the public key in `id_rsa.pub` mentioned previously and paste it in `Key`. Click on `Add SSH key` when all properties are set.
+In ths page, copy the public key in `id_rsa.pub` mentioned previously and paste it in property Key. Click on `Add SSH key` when all properties are set.
 
 Next, open Git Bash and enter the following:
 
