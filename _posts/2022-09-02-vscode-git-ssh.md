@@ -34,7 +34,7 @@ Keep pressing `Enter` until the key's randomart image is shown. You will find `i
 
 ### Associate SSH Key to Github
 
-Go to GitHub settings. Find SSH and GPG keys in Access. Click on New SSH key on the top-right corner. The following page may show.
+Go to GitHub settings. Find SSH and GPG keys in Access. Click on `New SSH key` on the top-right corner. The following page may show.
 
 ![ssh-key](/assets/images/ssh-key.png)
 
