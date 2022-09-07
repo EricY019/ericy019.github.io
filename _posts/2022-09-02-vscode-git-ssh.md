@@ -1,5 +1,5 @@
 ---
-title: "Connect to Github via Git with VsCode"
+title: "Connect to GitHub via Git with VsCode"
 categories:
   - Blog
 tags:
@@ -7,7 +7,7 @@ tags:
   - VsCode
 ---
 
-This blog introduces the required settings if one wishes to connect to Github using VsCode via SSH protocal. For the sake of simplicity, we assume VsCode and Git are properly installed in the environment.
+This blog introduces the required settings if one wishes to connect to GitHub using VsCode via SSH protocal. For the sake of simplicity, we assume VsCode and Git are properly installed in the environment.
 
 ### Setup Global User Name and User Email in Git Bash
 
@@ -32,7 +32,7 @@ $ ssh -keygen -t rsa -C "yourexample@example.com"
 
 Keep pressing `Enter` until the key's randomart image is shown. You will find `id_rsa` and `id_rsa.pub` in file path `C:\Users\$your_user_name\.ssh`, where `id_rsa` is the private key and `id_rsa.pub` the public key.
 
-### Associate SSH Key to Github
+### Associate SSH Key to GitHub
 
 Go to GitHub settings. Find SSH and GPG keys in Access. Click on `New SSH key` on the top-right corner. The following page may show.
 
