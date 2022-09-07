@@ -50,7 +50,7 @@ If it returns `Hi your_user_name! You've successfully authenticated, but GitHub 
 
 ### Git Clone via SSH
 
-Copy the SSH address of the repository you hope to clone. Afterwards, Go to VsCode, click on `Ctrl+Shift+P` and enter `Git Clone`. Paste the SSH address here, then you may select the local storage location of this cloned repository.
+Copy the SSH address of the repository you hope to clone. Afterwards, go to VsCode, click on `Ctrl+Shift+P` and enter `Git Clone`. Paste the SSH address here, then you may select the local storage location of this cloned repository.
 
 ### Commit Change to Remote Repository
 
