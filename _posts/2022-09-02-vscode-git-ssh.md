@@ -1,5 +1,5 @@
 ---
-title: "Connect to Github via Git with VsCode"
+title: "Connect to GitHub via Git with VsCode"
 categories:
   - Blog
 tags:
@@ -7,7 +7,7 @@ tags:
   - VsCode
 ---
 
-This blog introduces the required settings if one wishes to connect to Github using VsCode via SSH protocal. For the sake of simplicity, we assume VsCode and Git are properly installed in the environment.
+This blog introduces the required settings if one wishes to connect to GitHub using VsCode via SSH protocal. For the sake of simplicity, we assume VsCode and Git are properly installed in the environment.
 
 ### Setup Global User Name and User Email in Git Bash
 
@@ -27,18 +27,18 @@ Go to `C:\Users\$your_user_name` and check whether there is a `.ssh` folder with
 If not, open Git Bash and enter the following:
 
 ```ruby
-$ ssh -keygen -t rsa -C "yourexample@example.com"
+$ ssh-keygen -t rsa -C "yourexample@example.com"
 ```
 
-Keep pressing `Enter` until the key's randomart image is shown. You will find `id_rsa` and `id_rsa.pub` in file path `C:\Users\$your_user_name\.ssh`， where `id_rsa` is the private key and `id_rsa.pub` the public key.
+Keep pressing `Enter` until the key's randomart image is shown. You will find `id_rsa` and `id_rsa.pub` in file path `C:\Users\$your_user_name\.ssh`, where `id_rsa` is the private key and `id_rsa.pub` the public key.
 
-### Associate SSH Key to Github
+### Associate SSH Key to GitHub
 
-Go to GitHub settings. Find SSH and GPG keys in Access. Click on New SSH key on the top-right corner. The following page may show.
+Go to GitHub settings. Find SSH and GPG keys in Access. Click on `New SSH key` on the top-right corner. The following page may show.
 
 ![ssh-key](/assets/images/ssh-key.png)
 
-In ths page, copy the public key in `id_rsa.pub` mentioned previously and paste it in `Key`. Click on `Add SSH key` when all properties are set.
+In ths page, copy the public key in `id_rsa.pub` mentioned previously and paste it in property Key. Click on `Add SSH key` when all properties are set.
 
 Next, open Git Bash and enter the following:
 
@@ -50,7 +50,7 @@ If it returns `Hi your_user_name! You've successfully authenticated, but GitHub 
 
 ### Git Clone via SSH
 
-Copy the SSH address of the repository you hope to clone. Afterwards, Go to VsCode, click on `Ctrl+Shift+P` and enter `Git Clone`. Paste the SSH address here, then you may select the local storage location of this cloned repository.
+Copy the SSH address of the repository you hope to clone. Afterwards, go to VsCode, click on `Ctrl+Shift+P` and enter `Git Clone`. Paste the SSH address here, then you may select the local storage location of this cloned repository.
 
 ### Commit Change to Remote Repository
 
