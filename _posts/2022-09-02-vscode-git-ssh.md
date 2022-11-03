@@ -27,7 +27,7 @@ Go to `C:\Users\$your_user_name` and check whether there is a `.ssh` folder with
 If not, open Git Bash and enter the following:
 
 ```ruby
-$ ssh -keygen -t rsa -C "yourexample@example.com"
+$ ssh-keygen -t rsa -C "yourexample@example.com"
 ```
 
 Keep pressing `Enter` until the key's randomart image is shown. You will find `id_rsa` and `id_rsa.pub` in file path `C:\Users\$your_user_name\.ssh`, where `id_rsa` is the private key and `id_rsa.pub` the public key.
