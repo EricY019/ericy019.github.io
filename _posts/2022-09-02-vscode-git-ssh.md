@@ -1,13 +1,13 @@
 ---
-title: "Connect to GitHub via Git with VsCode"
+title: "Connect to GitHub via Git with VSCode"
 categories:
   - Blog
 tags:
   - Git
-  - VsCode
+  - VSCode
 ---
 
-This blog introduces the required settings if one wishes to connect to GitHub using VsCode via SSH protocal. For the sake of simplicity, we assume VsCode and Git are properly installed in the environment.
+This blog introduces the required settings if one wishes to connect to GitHub using VSCode via SSH protocal. For the sake of simplicity, we assume VSCode and Git are properly installed in the environment.
 
 ### Setup Global User Name and User Email in Git Bash
 
@@ -50,7 +50,7 @@ If it returns `Hi your_user_name! You've successfully authenticated, but GitHub 
 
 ### Git Clone via SSH
 
-Copy the SSH address of the repository you hope to clone. Afterwards, go to VsCode, click on `Ctrl+Shift+P` and enter `Git Clone`. Paste the SSH address here, then you may select the local storage location of this cloned repository.
+Copy the SSH address of the repository you hope to clone. Afterwards, go to VSCode, click on `Ctrl+Shift+P` and enter `Git Clone`. Paste the SSH address here, then you may select the local storage location of this cloned repository.
 
 ### Commit Change to Remote Repository
 
