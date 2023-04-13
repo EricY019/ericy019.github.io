@@ -63,7 +63,7 @@ plugins:
 author:
   name   : Jingwen Yang
   avatar : "/assets/images/bio-photo.png"
-  bio    : "Jingwen is a senior CSEE undergraduate at HKUST, and an incoming CS masters at UCLA."
+  bio    : "Jingwen is a senior CSEE undergraduate at HKUST, and an incoming CS master at UCLA."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
