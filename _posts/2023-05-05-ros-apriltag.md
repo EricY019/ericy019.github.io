@@ -7,7 +7,11 @@ tags:
   - Apriltag
 ---
 
-This blog shares one of the major achievements of our final year project. Our objective is to develop a system capable of **recognizing elevator buttons using a monocular camera** and **instructing the robotic arm to press the button**. AprilTag is particularly useful in this task as it well supports ROS.
+This blog introduces how to employ AprilTag markers for localizing a point in 3-D space. This benefits tasks such as navigation, robot control, and augmentated reality. For preparations, you should have a camera ready.
+
+## Driving the camera
+
+We assume that you have adopted a USB camera as video input.
 
 ## AprilTag Introduction
 
@@ -15,9 +19,7 @@ AprilTag is a visual fiducial system used in robotics and camera calibration. Ta
 
 ## Installation
 
-[Official website](https://april.eecs.umich.edu/software/apriltag)
-
-[Source code GitHub](https://github.com/AprilRobotics/apriltag_ros)
+[Official website](https://april.eecs.umich.edu/software/apriltag), [GitHub source code](https://github.com/AprilRobotics/apriltag_ros)
 
 You can install the program by simply putting the source code in the workspace, commands as follows:
 
