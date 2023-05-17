@@ -36,7 +36,7 @@ Keep pressing `Enter` until the key's randomart image is shown. You will find `i
 
 Go to GitHub settings. Find SSH and GPG keys in Access. Click on `New SSH key` on the top-right corner. The following page may show.
 
-![ssh-key](/assets/images/ssh-key.png)
+![ssh-key](/assets/images/vsgit-ssh-key.png)
 
 In ths page, copy the public key in `id_rsa.pub` mentioned previously and paste it in property Key. Click on `Add SSH key` when all properties are set.
 
@@ -54,7 +54,7 @@ Copy the SSH address of the repository you hope to clone. Afterwards, go to VSCo
 
 ### Commit Change to Remote Repository
 
-![commit-change](/assets/images/commit-change.png)
+![commit-change](/assets/images/vsgit-commit-change.png)
 
 The add icon indicates that you may stage the changes to local working tree. Commit the changes to local repository with the message you set. Make sure the message is not empty! 
 
