@@ -63,26 +63,23 @@ plugins:
 author:
   name   : Jingwen Yang
   avatar : "/assets/images/bio-photo.png"
-  bio    : "Jingwen is a senior CSEE undergraduate at HKUST, and an incoming CS master at UCLA."
+  bio    : "Jingwen graduated at HKUST studying CSEE, and is pursuing a CS master at UCLA."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://ericy019.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/EricY019"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/ericy19/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jingwen-yang-a34250273/"
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/EricY019"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/ericy19/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jingwen-yang-a34250273/"
 
 defaults:
   # _posts
