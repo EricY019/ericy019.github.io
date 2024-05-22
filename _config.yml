@@ -71,9 +71,6 @@ author:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jingwen-yang-a34250273/"
-    - label: "CV"
-      icon: "fas fa-fw fa-file-pdf"
-      url: "https://drive.google.com/file/d/14kCWAPI64y_G0eYzBc9fy8L2BkmJS_Vy/view?usp=sharing"
 
 footer:
   links:
