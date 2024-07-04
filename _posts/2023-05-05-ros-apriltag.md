@@ -9,7 +9,7 @@ tags:
 
 This blog introduces how to employ AprilTag markers for localizing a target in 3-D space. This benefits tasks such as navigation, robot control, and augmentated reality. For preparations, you should have a camera ready.
 
-# Launching Camera
+## Launching Camera
 
 In our design, we connect a USB camera with the Raspberry Pi as the system's visual input. We launch the camera video feed as ROS topics for further processing. Installation commands of the program are as follows:
 
@@ -35,11 +35,11 @@ roslaunch usb_cam usb_cam-test.launch
 
 You may also encounter an error in the previous step, indicating that camera calibration has not been conducted. This procedure is needed to combat spatial distortion problems when measuring the size in world units. Using a standard figure such as a checkerboard, we can obtain the camera parameters including intrinsics, extrinsics, and distortion coefficients. This [link](https://www.mathworks.com/help/vision/ug/camera-calibration.html) explains the underlying mathematical principle, and this [link](https://wiki.ros.org/camera_calibration) introduces how to conduct camera calibration.
 
-# AprilTag Detection Algorithm
+## AprilTag Detection Algorithm
 
 AprilTag is a visual fiducial system used in robotics and camera calibration. Targets are created from an ordinary printer, then the AprilTag detection software computes the precise 3D position, orientation, and identity of the tags relative to the camera. You can find some of the AprilTag (of tag family 36h11) at this [link](https://www.dotproduct3d.com/uploads/8/5/1/1/85115558/apriltags1-50.pdf).
 
-## Installation
+### Installation
 
 [Official website](https://april.eecs.umich.edu/software/apriltag), [GitHub source code](https://github.com/AprilRobotics/apriltag_ros)
 
@@ -52,7 +52,7 @@ cd ~/workspace
 catkin_make
 ```
 
-## Alter Configuration File
+### Config File
 
 Go to `apriltag_ros/launch/continuous_detection.launch`. Alter the camera input configurations to subscribe to the ROS video feed. Note that the actual scenario may be slightly different, refer to this [link](http://wiki.ros.org/image_proc) for the technical details of the published topics.
 
@@ -72,7 +72,7 @@ standalong_tags:
 ]
 ```
 
-## Activate AprilTag Algorithm
+### Activate AprilTag Algorithm
 
 First, launch the camera in ROS as in the previous section. Then enter the following commands one by one:
 
@@ -110,6 +110,6 @@ rostopic echo /tag_detections
 
 ![detect-msg](/assets/images/rosapriltag-detect-msg.png)
 
-# Next Steps
+## Next Steps
 
 The AprilTag detection algorithm generates the position coordinates of the target tags with respect to the camera (or the other way round), including the *position* and *orientation*. Coordinates can be transformed to the world axes for more tasks.
