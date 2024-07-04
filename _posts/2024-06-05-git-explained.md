@@ -1,10 +1,10 @@
 ---
-title: "Git 101"
+title: "Git, Explained"
 categories:
   - Blog
 tags:
   - Git
-  - VSCode
+  - VsCode
 ---
 
 This blog introduces the basics of Git workflow, and how to use it for source code management. Put it simply, Git enables version control between multiple programmers to work locally and update via a shared codebase like GitHub.
@@ -13,7 +13,7 @@ This blog introduces the basics of Git workflow, and how to use it for source co
 
 Figure below shows a simple workflow for using Git to maintain a repository. ***Working directory*** is the local folder that each programmer works on, such as adding or removing some files.  ***Staging area*** places all the changes to be commited next. ***Local Repo (HEAD)*** is the repository stored on the local machine, and ***Remote Repo (MASTER)*** is the repository stored on the remote side.
 
-![workflow](/assest/images/git101-worflow.png)
+![workflow](/assest/images/gitexplained-workflow.png)
 
 ## Basic Git Commands
 
@@ -75,3 +75,33 @@ git log # See commit history made to the files
 In simplest terms, `git fecth` followed by `git merge` equals to `git pull`.
 
 `git pull` automatically merges the commits into the working branch without reviewing them first. `git fetch` gathers all commits that do not exist in current branch from target branch and stores in local repository, but does not merge them with current branch, allowing further examining on local and remote files before `git merge`.
+
+## Advanced Git Commands
+
+### Stash Current Working Directory
+
+`git stash` records the current state of the working directory, and goes back to a clean working directory. The command saves the local modifications away and reverts the working directory to matcht the ***HEAD*** commit. Do the following if you have uncommited changes in the directory, and you hope to merge current changes:
+
+```ruby
+git stash # Add the uncommited changes to stash
+git merge # Merge current changes
+git stash pop # Obtain changes back from the working tree
+```
+
+### Git Rebase
+
+`git rebase` moves the entire branch to another branch. For sake of simplicity, assuming that we have branch *feature* from branch *master*, and both branches have been worked on for a while. We hopt to merge all the changes on *feature* branch onto *master* branch. Do the following:
+
+```ruby
+git checkout feature
+git rebase master # Equivalent to git rebase master feature
+```
+
+Note that merge conflicts often occur, as *master* branch has some unique changes from *feature* branch. Do the following to solve them:
+
+```ruby
+git add <file-name>
+git rebase continue
+git rebase --skip # Or, skip the conflicted commit
+git rebase --abort # Or, stop rebasing
+```
