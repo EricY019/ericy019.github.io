@@ -13,7 +13,7 @@ This blog introduces the basics of Git workflow, and how to use it for source co
 
 Figure below shows a simple workflow for using Git to maintain a repository. ***Working directory*** is the local folder that each programmer works on, such as adding or removing some files.  ***Staging area*** places all the changes to be commited next. ***Local Repo (HEAD)*** is the repository stored on the local machine, and ***Remote Repo (MASTER)*** is the repository stored on the remote side.
 
-![workflow](/assest/images/gitexplained-workflow.png)
+![workflow](/assets/images/gitexplained-workflow.png)
 
 ## Basic Git Commands
 
