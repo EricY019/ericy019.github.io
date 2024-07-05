@@ -7,7 +7,7 @@ tags:
   - VsCode
 ---
 
-This blog introduces the basics of Git workflow, and how to use it for source code management. Put it simply, Git enables version control between multiple programmers to work locally and update via a shared codebase like GitHub.
+This blog introduces Git workflow, and how to use it for source code management. Put it simply, Git enables version control between multiple programmers to work locally and update via a shared codebase like GitHub.
 
 ## Simple Git Workflow
 
@@ -17,10 +17,10 @@ Figure below shows a simple workflow for using Git to maintain a repository. ***
 
 ## Basic Git Commands
 
-### Initialize Local Repository
+### Local Repository
 
 ```ruby
-git clone remote_repository_URL # Download from a remote repository, and place a copy to local directory
+git clone <remote-repository-URL> # Download from a remote repository, and place a copy to local directory
 git init # Initiate an empty git repository
 ```
 
@@ -49,7 +49,7 @@ git reset HEAD~1 # Remove the most recent commit
 Up till now, all changes we made in the file are updated in local repository. To update the changes to the remote master. Do the following:
 
 ```ruby
-git remote add origin remote_repository_URL # Set the new remote
+git remote add origin <remote-repository-URL> # Set the new remote
 git remote -v # list the remote connections you have to other repositories
 git push -u origin master # Push changes to origin
 ```
@@ -70,13 +70,28 @@ git checkout -- <filename> # Revert back to a specific file name
 git log # See commit history made to the files
 ```
 
+## Advanced Git Commands
+
+### Branching
+
+Branching function of Git allows multiple users to collaborate together.
+
+```ruby
+git branch <branch-name> # Create new branch
+git checkout <branch-name> # Switch to new branch
+```
+
 ### Git Fetch, Git Merge
 
-In simplest terms, `git fecth` followed by `git merge` equals to `git pull`.
+In simplest terms, `git fetch` followed by `git merge` equals to `git pull`.
 
-`git pull` automatically merges the commits into the working branch without reviewing them first. `git fetch` gathers all commits that do not exist in current branch from target branch and stores in local repository, but does not merge them with current branch, allowing further examining on local and remote files before `git merge`.
+`git pull` automatically merges the commits into the working branch without reviewing them first. `git fetch` gathers all commits that do not exist in current branch from target branch and stores in local repository, but does not merge them with working directory, allowing further examining on local and remote files before `git merge`.
 
-## Advanced Git Commands
+```ruby
+git pull origin master # Merge commits from remote origin into master branch
+git fetch origin master # Fetch commits from remote origin into master branch, stores in local repo
+git merge origin master # Merge to working directory
+```
 
 ### Stash Current Working Directory
 
@@ -90,11 +105,11 @@ git stash pop # Obtain changes back from the working tree
 
 ### Git Rebase
 
-`git rebase` moves the entire branch to another branch. For sake of simplicity, assuming that we have branch *feature* from branch *master*, and both branches have been worked on for a while. We hopt to merge all the changes on *feature* branch onto *master* branch. Do the following:
+`git rebase` moves the entire branch to another branch. For sake of simplicity, assuming that we have branch *feature* from branch *master*, and both branches have been worked on for a while. We hope to merge all the changes on *feature* branch onto *master* branch. Do the following:
 
 ```ruby
 git checkout feature
-git rebase master # Equivalent to git rebase master feature
+git rebase master # Above two commands are equivalent to git rebase master feature
 ```
 
 Note that merge conflicts often occur, as *master* branch has some unique changes from *feature* branch. Do the following to solve them:
