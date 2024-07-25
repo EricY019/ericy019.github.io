@@ -1,5 +1,5 @@
 ---
-title: "Object localization using ROS and AprilTag"
+title: "Object Localization using ROS and AprilTag"
 categories:
   - Blog
 tags:
