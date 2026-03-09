@@ -4,7 +4,6 @@ categories:
   - Blog
 tags:
   - Git
-  - VsCode
 ---
 
 This blog introduces Git workflow, and how to use it for source code management. Put it simply, Git enables version control between multiple programmers to work locally and update via a shared codebase like GitHub.

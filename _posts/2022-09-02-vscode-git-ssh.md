@@ -1,10 +1,10 @@
 ---
-title: "Using Git via SSH with VsCode"
+title: "Using Git via SSH with VSCode"
 categories:
   - Blog
 tags:
   - Git
-  - VsCode
+  - VSCode
 ---
 
 This blog introduces the required settings if one wishes to connect to GitHub using VSCode via SSH protocal. For the sake of simplicity, we assume VSCode and Git are properly installed in the environment.
