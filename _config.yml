@@ -63,7 +63,7 @@ plugins:
 author:
   name   : Jingwen Yang
   avatar : "/assets/images/bio-photo.png"
-  bio    : "I hold a BS in Computer Science from HKUST and a MS in Computer Science from UCLA."
+  bio    : "I hold a BS in Computer Science from HKUST, and a MS in Computer Science from UCLA."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
